@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chemical Compound Store</title>
+  </head>
+  <body>
+
+    <link rel="stylesheet" type="text/css" href="style 2.css">
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+            <li><a href="productsView.HTML">Products</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to Chemical Compound Store</h1>
+        <p>We sell high-quality chemical compounds for various industries</p>
+      </section>
+
+      <section id="products">
+        <h2>Our Products</h2>
+        <ul>
+          <li>Acids</li>
+          <li>Bases</li>
+          <li>Solvents</li>
+          <li>Catalysts</li>
+        </ul>
+      </section>
+
+      <section id="store">
+        <h2>Chemical Compound Store</h2>
+        <form action="submit-order.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="product">Select a product:</label>
+          <select id="product" name="product">
+            <option value="acid">Acid</option>
+            <option value="base">Base</option>
+            <option value="solvent">Solvent</option>
+            <option value="catalyst">Catalyst</option>
+          </select><br><br>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity"><br><br>
+          <input type="submit" value="Submit Order">
+        </form>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading supplier of chemical compounds for various industries. Our commitment to quality and customer satisfaction sets us apart from the competition.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@chemicalcompoundstore.com</p>
+        <p>Phone: (555) 555-5555</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Chemical Compound Store 2023</p>
+    </footer>
+  </body>
+</html>

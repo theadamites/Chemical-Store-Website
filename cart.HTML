@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chemical Compound Store - Cart</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="style 2.css">
+ 
+    <header>
+      <nav>
+        <ul>
+       
+          <li><a href="index.HTML">Home</a></li>
+          <li><a href="productsView.HTML">Products</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.HTML">View Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+    <main>
+      <h1>Cart</h1>
+      <div id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <button id="clear">Check Out</button>
+    </main>
+
+
+    <span id="total"> Total: </span>
+    <p id="totalItems"> Total Items: </p>
+<style>
+  html {
+  background-color: rgb(251, 251, 251);
+}
+
+  #cart-items {
+display: flex;
+flex-wrap: wrap;
+margin-left: 5px;
+
+
+
+}
+
+#newElement {
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-right: 10px;
+width: calc(25% - 10px);
+margin-bottom: 20px;
+padding: 10px;
+border: 1px solid black;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: rgb(255, 255, 255);
+border-radius: 10px;
+}
+
+#newElement p {
+margin: 0;
+}
+
+#newElement button {
+margin-top: 10px;
+align-self: flex-end;
+}
+
+</style>
+<style src="style.css"></style>
+
+    <script src="trial.js"> </script>
+    <script>
+      
+      /*
+      let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+function displayCart() {
+  let container = document.getElementById("cart-items");
+  container.innerHTML = "";
+
+  cartItems.forEach(function (item, index) {
+    let itemBox = document.createElement("div");
+    itemBox.id = "newElement";
+
+    let itemName = document.createElement("p");
+    itemName.id = "itemName";
+    itemName.textContent = item.name;
+
+    let itemQuantity = document.createElement("p");
+    itemQuantity.id = "itemQuantity";
+    itemQuantity.textContent = item.quantity;
+
+    let itemPrice = document.createElement("p");
+    itemPrice.id = "itemPrice";
+    itemPrice.textContent = item.price;
+
+    let removeButton = document.createElement("button");
+    removeButton.setAttribute("data-price", item.price);
+    removeButton.setAttribute("data-quantity", item.quantity);
+    removeButton.setAttribute("data-indexnum", index);
+    removeButton.id = "removeButton";
+    removeButton.textContent = "Remove";
+    removeButton.addEventListener("click", function (event) {
+      let itemIndex = event.target.dataset.indexnum;
+      cartItems.splice(itemIndex, 1);
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+      displayCart();
+    });
+
+    itemBox.appendChild(itemName);
+    itemBox.appendChild(itemQuantity);
+    itemBox.appendChild(itemPrice);
+    itemBox.appendChild(removeButton);
+    container.appendChild(itemBox);
+  });
+}
+
+displayCart();
+*/
+    </script>
+  
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chemical Compound Store - Store</title>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="style 2.css">
+    <script src="JS.js"></script>
+
+    <header>
+      <nav>
+        <ul>
+       
+          <li><a href="index.html">Home</a></li>
+          <li><a href="productsView.HTML">Products</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.HTML">View Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+
+    <main>
+        <h1>Store</h1>
+        <div class="store-box" id="acid">
+          <h2>Acids</h2>
+          <p>Check out our wide range of acids and find the perfect one for your needs!</p>
+ 
+          <button class="product"  id="product1" href="store.pages/acids.html"> Select</button>
+        </div>
+        <div class="store-box" id="base">
+          <h2>Bases</h2>
+          <p>We offer a variety of bases to choose from, including strong and weak bases.</p>
+
+          <button class="product" id="product2" href="store.pages/bases.html" > Select</button>
+        </div>
+        <div class="store-box" id="solvent">
+          <h2>Solvents</h2>
+          <p>Find the right solvent for your application, from polar to non-polar solvents.</p>
+   
+          <button class="product" id="product3" href="store.pages/solvents.html" > Select</button>
+        </div>
+        <div class="store-box" id="catalyst">
+          <h2>Catalysts</h2>
+          <p>Improve the efficiency of your chemical reactions with our selection of catalysts.</p>
+          <button class="product"  id="product4" href="store.pages/catalysts.html" > Select</button>
+        </div>
+        <div class="store-box" id="Machiens">
+          <h2>Equpiment</h2>
+          <p>Improve the efficiency of your liquid handeling department with a vority of equipment.</p>
+          <button class="product"  id="product5" href="store.pages/catalysts.html" > Select</button>
+        </div>
+</main>
+
+    <button id="View-cart" href="cart.HTML">View Cart</button>
+
+<script>
+
+document.querySelector('#View-cart').addEventListener('click', () => {
+  window.location.href = 'cart.html';
+});
+
+document.querySelector('#product1').addEventListener('click', () => {
+  window.location.href = 'products.HTML';
+});
+document.querySelector('#product2').addEventListener('click', () => {
+  window.location.href = 'products.HTML';
+});
+document.querySelector('#product4').addEventListener('click', () => {
+  window.location.href = 'products.HTML';
+});
+document.querySelector('#product3').addEventListener('click', () => {
+  window.location.href = 'products.HTML';
+});
+document.querySelector('#product5').addEventListener('click', () => {
+  window.location.href = 'products.HTML';
+});
+</script>
+  </body>
+</html>
+
+
+<script>
+/*
+  document.querySelector('#View-cart').addEventListener('click', () => {
+    window.location.href = 'cart.html';
+  });
+  
+  document.querySelector('#product1').addEventListener('click', () => {
+    window.location.href = 'items.shop.html/#acids';
+  });
+  document.querySelector('#product2').addEventListener('click', () => {
+    window.location.href = 'items.shop.html/#bases';
+  });
+  document.querySelector('#product4').addEventListener('click', () => {
+    window.location.href = 'items.shop.html/#cat';
+  });
+  document.querySelector('#product3').addEventListener('click', () => {
+    window.location.href = 'items.shop.html/#solv';
+  });
+  document.querySelector('#product5').addEventListener('click', () => {
+    window.location.href = 'items.shop.html/#equip';
+  });
+  */
+  </script>
